@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="container">
+<div class="contentinfo">
+	<div class="publishday">
+		<h3 class="day-title">
+			<strong>
+				{{productdate}}
+			</strong>
+		</h3>
+		<div class="day-items">
+			<ul class="project-items">
+				{% for item in productlist %}
+				<li class="project-item">{{item.title}}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	
+	<div class="details">
+	<div class="product-info">
+			<h4 class="media-heading">
+				{{product.title}}
+			</h4>
+			<p>{{product.description}}</p>
+	</div>
+	<div class="product-option">
+		<div>
+			<span>分享到：</span>
+		</div>
+		<div>
+			<span>微信</span>
+			<span>微博</span>
+		</div>
+	</div>
+	<div class="product-likes">
+		<div>{{likecount}}人点赞：</div>
+		<div>
+			<ul class="project-person">
+				{% for user in users %}
+				<li>{{ user.username }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="product-comments">
+		<span>评论（2）</span>
+	</div>
+</div>
+</div>
+</div>
+{% endblock %}

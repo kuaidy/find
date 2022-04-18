@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background-color: lightskyblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+	padding:20px;	
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+#content-info {
+    width: 60%;
+    min-width: 750px;
+}
+.media{
+    display: flex;
+    align-items: center;
+	width:100%;
+	margin-top:10px;
+}
+#content-info a {
+    font-size: 14px;
+    color: #56453d;
+    text-decoration: none;
+}
+.media-object {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	width:30px;
+	align-items:center;
+	border:1px solid #ccc;
+}
+#content-info .media-object strong {
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    font-weight: 400;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-chevron-up:before {
+    content: "\e113";
+}
+
+/*登录注册*/
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    /* background-color: lightblue; */
+}
+a{
+	text-decoration:none;
+}
+.loginmain {
+    width: 300px;
+    margin: auto;
+    /*margin-top: 100px;*/
+    display: flex;
+    flex-direction: column;
+}
+.loginlogo {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+form.loginform {
+    display: flex;
+    flex-direction: column;
+}
+form.loginform span,input {
+    height: 35px;
+    line-height: 35px;
+}
+input[type="submit"] {
+    margin-top: 15px;
+    background-color: lightskyblue;
+    color: #fff;
+    border: 0px;
+}
+.logincontent {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* 详情页 */
+.contentinfo {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+}
+.day {
+    display: flex;
+    flex-direction: column;
+	width:60%;
+}
+.media-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.media-info{
+	margin-left:10px;
+}
+.details {
+    margin-left: 15px;
+    width: 100%;
+}
+.product-option {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-top: 15px;
+}
+ul.project-person {
+    display: flex;
+}
+
+.publishday {
+    min-width: 130px;
+}
+
+/* 详情页 */
+
+
+/* 个人中心 */
+
+.personcenter {
+    width: 65%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.personname {
+    text-align: center;
+}
+.personword {
+    text-align: center;
+}
+ul.person-aboutme {
+    display: flex;
+}
+.personinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+}
+.personimage {
+    width: 50px;
+    height: 50px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+ul.person-aboutme li {
+    margin: 0px 10px;
+}
+.selectitems {
+    width: 50%;
+}
+.personlists {
+    width: 50%;
+}
+.person-article li {
+    padding: 15px 0px;
+}
+
+
+/* 文章发布 */
+
+form.publishform {
+    display: flex;
+    flex-direction: column;
+    min-width: 750px;
+}
+textarea.publishdesc {
+    min-height: 300px;
+}
+
+
+/* 底部 */
+.footer {
+    text-align: center;
+}

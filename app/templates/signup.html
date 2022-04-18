@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册Find</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="loginmain">
+		<div class="loginlogo">Find</div>
+		<div class="logincontent">
+			<form class="loginform" method="post">
+				<span>*用户名</span>
+				<input type="text/html" name="username">
+				<span>*密码</span>
+				<input type="password" name="password">
+				<span>*确认密码</span>
+				<input type="password" name="conformpwd">
+				<input type="submit" name="" value="注册">
+				<div class="tosignup">
+					<span>有账号？</span>
+					<span><a href="">直接登录</a></span>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
